@@ -1,0 +1,1 @@
+This example demonstrates a common error when using the $unwind operator in MongoDB aggregation pipelines.  The $unwind operator expects an array to be present. If the preceding stage, such as a $lookup, does not return a match, this may lead to an error because the array will be null or undefined. The solution shows how to handle these cases.
